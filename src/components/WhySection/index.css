@@ -12,14 +12,12 @@
     max-width: 160px;
     padding-top: 108px;
     position: relative;
-    /* top: 54px; */
     left: 20px;
     min-height: 340px;
 }
 
 .img_wrapper {
     position: relative;
-    /* width: 170px; */
     min-width: 190px;
     overflow-y: hidden;
 }
@@ -62,8 +60,6 @@
 
 .why_button {
     width: 54px;
-
-    /* width: 45px; */
     font-size: 4px;
     font-weight: bold;
     line-height: 10px;
@@ -116,7 +112,6 @@
     width: 190px;
     left: -137px;
     top: 92px;
-    /* bottom: -65px; */
     transition: all 1000ms ease-in-out;
     animation-name: zoom-in;
     animation-duration: 1s;
@@ -137,14 +132,10 @@
 }
 
 .card1 {
-    /* top: -202px;
-    width: 220px;
-    left: -60px; */
     top: 0px;
     width: 220px;
     left: -20px;
     height: 288px;
-
     animation-name: slide-in-one;
     animation-duration: 1000ms;
     animation-fill-mode: both;
@@ -152,12 +143,9 @@
 }
 
 .card2 {
-    /* top: 114px; */
     height: 220px;
-     /* left: -195px; */
-     top: 118px;
-     /* overflow-y: hidden; */
-     left: -192px;
+    top: 118px;
+    left: -192px;
 }
 
 .slide-animate {
@@ -260,24 +248,13 @@
     }
 
     .card1 {
-        /* left: -211px;
-        top: -50px;
-        width: 764px;
-        height: 410px; */
-
         left: -211px;
-    /* top: -50px; */
-    width: 764px;
-    height: 410px;
+        width: 764px;
+        height: 410px;
     }
 
     .card2 {
-        /* width: 388px;
-        top: 84px;
-        height: 459px;
-        left: 72px; */
         width: 388px;
-        /* top: 84px; */
         height: 459px;
         left: 72px;
     }
@@ -304,7 +281,6 @@
         font-size: 11px;
         line-height: 27px;
         margin-top: 24px;
-
     }
 
     .animate-expand {
@@ -317,7 +293,6 @@
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .why_section {
         max-width: 1024px;
-        /* padding: 150px 0 270px; */
         padding: 100px 0 110px;
         overflow-y: hidden;
         margin: 0;
@@ -325,30 +300,19 @@
     }
 
     .baton-img {
-        /* height: 550px;
+        height: 550px;
         width: 670px;
         transform: rotate(75deg);
         left: -302px;
-        top: -200px; */
-
-        height: 550px;
-    width: 670px;
-    transform: rotate(75deg);
-    left: -302px;
-    top: -20px;
+        top: -70px;
     }
 
     .donut-img {
-        /* height: 800px;
-        width: 800px;
-        bottom: -511px;
-        left: -558px; */
-
         height: 800px;
         width: 800px;
         bottom: -417px;
         left: -558px;
-        top: 190px;
+        top: 140px;
     }
 
     @keyframes slide-top {
@@ -359,7 +323,7 @@
 
         100% {
             left: -302px;
-            top: -200px;
+            top: -70px;
         }
     }
 
@@ -370,7 +334,7 @@
         }
 
         100% {
-            height:800px;
+            height: 800px;
             width: 800px;
         }
     }
@@ -380,12 +344,12 @@
             width: 0;
             margin-left: 0px;
         }
-    
+
         80% {
             width: 0%;
             margin-left: 0px;
         }
-    
+
         100% {
             margin-left: 16px;
             width: 12px;
@@ -395,10 +359,6 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1499px) {
     .why_section {
-        /* max-width: 1024px;
-        margin: 150px auto 315px;
-        height: auto; */
-
         max-width: 1024px;
         margin: 0;
         height: 900px;
@@ -410,26 +370,26 @@
         height: 550px;
         width: 670px;
         transform: rotate(75deg);
-        left: -412px;
-        top: -200px;
+        left: -343px;
+        top: -80px;
     }
 
     .donut-img {
         height: 800px;
         width: 800px;
-        bottom: -500px;
-        left: -672px;
+        left: -600px;
+        top: 130px;
     }
 
     @keyframes slide-top {
         0% {
             left: -500px;
-            top: -400px;
+            top: -300px;
         }
 
         100% {
-            left: -412px;
-            top: -200px;
+            left: -343px;
+            top: -80px;
         }
     }
 
@@ -440,7 +400,7 @@
         }
 
         100% {
-            height:800px;
+            height: 800px;
             width: 800px;
         }
     }
@@ -492,7 +452,6 @@
         line-height: 30px;
         letter-spacing: 0px;
         margin-top: 15px;
-        /* height: 133px; */
         width: fit-content;
         min-height: 150px;
     }
@@ -511,20 +470,15 @@
     }
 
     .baton-img {
-        /* left: -340px; */
-        /* top: 0; */
         height: 750px;
         width: 850px;
-
         left: -282px;
-    top: -95px;
+        top: -95px;
     }
 
     .donut-img {
         height: 950px;
         width: 1000px;
-        /* left: -650px;
-        top: 300px; */
         left: -650px;
         top: 140px;
     }
@@ -534,17 +488,10 @@
         top: -23px;
         height: 630px;
         width: 630px;
-
         left: -40px;
     }
 
     .card2 {
-        /* width: auto;
-        top: 216px;
-        /* right: -128px; */
-        /* left: unset;
-        height: auto;
-        right: -42px; */
         width: 450px;
         top: 216px;
         left: 162px;
@@ -555,12 +502,12 @@
     @keyframes slide-top {
         0% {
             left: -500px;
-            top: -400px;
+            top: -300px;
         }
 
         100% {
-            left: -340px;
-            top: -195px;
+            left: -282px;
+            top: -95px;
         }
     }
 
@@ -581,12 +528,12 @@
             width: 0;
             margin-left: 0px;
         }
-    
+
         80% {
             width: 0%;
             margin-left: 0px;
         }
-    
+
         100% {
             margin-left: 16px;
             width: 26px;

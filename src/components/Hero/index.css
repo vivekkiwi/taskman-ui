@@ -186,7 +186,6 @@
     transition: all 500ms ease-in-out;
     animation-name: grow-right;
     animation-duration: 500ms;
-
     width: 600px;
     height: 600px;
     top: -150px;
@@ -446,9 +445,6 @@
         font-size: 40px;
         font-weight: bold;
         line-height: 48px;
-        /* max-width: 352px;
-        height: 80px; */
-
         max-width: 370px;
         height: 96px;
     }

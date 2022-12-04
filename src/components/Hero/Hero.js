@@ -21,16 +21,20 @@ import Hero_Card_4 from "../../assets/images/svg/Hero_Card-4.svg";
 
 import "./index.css";
 
+const data = {
+    heading: "Task Management And Lists Tool",
+    subHeading: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+    btnText: "Try for free"
+}
+
 const Hero = () => {
     return(<section class="hero_wrapper">
     <div class="hero">
-        <h1 class="hero_heading">Task Management And Lists Tool</h1>
-        <p class="hero_sub_heading">There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in
-            some form, by injected humour.</p>
+        <h1 class="hero_heading">{data.heading}</h1>
+        <p class="hero_sub_heading">{data.subHeading}</p>
         <div class="actions margin-top-60">
             <input type="email effect-9" class="email" placeholder="Name@company.com" />
-            <button class="try_button btn_shadow"><span>Try for free</span></button>
+            <button class="try_button btn_shadow"><span>{data.btnText}</span></button>
         </div>
         <div class="icons_wrapper">
             <div class="flex">

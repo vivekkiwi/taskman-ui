@@ -5,7 +5,7 @@
 }
 
 .sign_up_wrapper {
-    padding: 63px 0 40px;
+    padding: 0 0 40px;
     max-width: 150px;
     display: flex;
     flex-direction: column;
@@ -121,9 +121,18 @@
     height: 140px;
 }
 
+.actions-margin{
+    margin-top: 35px;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1499px) {
+
+    .sign_up{
+        margin-top: -150px;
+    }
+
     .sign_up_wrapper {
-        padding: 40px 0 200px;
+        padding: 0 0 200px;
         max-width: 350px;
     }
 
@@ -164,6 +173,9 @@
 
 
 @media screen and (min-width: 1500px) {
+    .actions-margin{
+        margin-top: 70px;
+    }
 
     .sign_up {
         margin-top: -88px;
