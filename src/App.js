@@ -6,7 +6,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import WhySection from './components/WhySection';
 
-const SCROLL_OFFSET = 0;
+// NOTE :: Handling edge cases for mobile screen devices
+const SCROLL_OFFSET = 200;
 
 const EMPTY_SCROLL_STATE = {
   benefitsEl: false,
@@ -23,9 +24,10 @@ function App() {
   const [scrollState, setScrollState] = useState(EMPTY_SCROLL_STATE);
 
   const updateInitialObject = ({fieldName}) => {
+    const OFFSET = fieldName ==="sign_up" ? SCROLL_OFFSET : 0;
     return {
-      top: document?.getElementsByClassName(`${fieldName}`)[0]?.getBoundingClientRect()?.top - SCROLL_OFFSET,
-      bottom: document?.getElementsByClassName(`${fieldName}`)[0]?.getBoundingClientRect()?.bottom  - SCROLL_OFFSET,
+      top: document?.getElementsByClassName(`${fieldName}`)[0]?.getBoundingClientRect()?.top - OFFSET,
+      bottom: document?.getElementsByClassName(`${fieldName}`)[0]?.getBoundingClientRect()?.bottom  - OFFSET,
       isVisisted: false
     }
   }

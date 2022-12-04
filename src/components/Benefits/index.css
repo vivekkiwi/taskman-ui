@@ -20,7 +20,6 @@
 
 .benefits_cards_wrapper {
     display: flex;
-    justify-content: center;
     margin-top: 0;
     position: relative;
 }
@@ -29,9 +28,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 146px;
+    max-width: 90px;
     margin: 20px 12px 0;
-    min-height: 57px;
+    /* min-height: 57px; */
+    min-height: 80px;
+    width: 90px;
 }
 
 .benefits_img {
@@ -76,6 +77,7 @@
 
     .benefits_cards_wrapper{
         margin-top: -3px;
+        justify-content: center;
     }
 
     .benefits_card{
@@ -118,6 +120,7 @@
 
     .benefits_cards_wrapper {
         margin-top: 102px;
+        justify-content: center;
     }
 
     .benefits_card {

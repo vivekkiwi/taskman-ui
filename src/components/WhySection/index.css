@@ -21,6 +21,7 @@
     position: relative;
     /* width: 170px; */
     min-width: 190px;
+    overflow-y: hidden;
 }
 
 .why_image {
