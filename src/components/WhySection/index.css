@@ -1,0 +1,529 @@
+.why_section {
+    display: flex;
+    justify-content: center;
+    max-width: 768px;
+    padding: 0 12px 0;
+    margin: 0 auto;
+    position: relative;
+    height: 263px;
+}
+
+.why_wrapper {
+    max-width: 160px;
+    padding-top: 54px;
+    position: relative;
+    top: 54px;
+    left: 20px;
+}
+
+.img_wrapper {
+    position: relative;
+    width: 170px;
+}
+
+.why_image {
+    margin-right: 0px;
+    width: 201px;
+    height: 212px;
+    top: 15px;
+    left: -23px;
+    position: relative;
+}
+
+.why_heading {
+    letter-spacing: 0px;
+    color: var(--baltic_sea);
+    height: 48px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    font-family: var(--rubik);
+    max-width: 100px;
+}
+
+.why_text {
+    text-align: left;
+    font-size: 4px;
+    font-weight: normal;
+    line-height: 6px;
+    font-family: var(--poppins);
+    letter-spacing: 0px;
+    color: var(--nobel);
+    opacity: 1;
+    margin-top: -3px;
+    height: 26px;
+    width: 120px;
+
+}
+
+.why_button {
+    width: 45px;
+    font-size: 4px;
+    font-weight: bold;
+    line-height: 5px;
+    font-family: var(--poppins);
+    letter-spacing: 0px;
+    color: var(--baltic_sea);
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+    background-color: var(--white);
+    text-align: left;
+    animation-name: slide-in-two;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-delay: 1000ms;
+    animation-timing-function: ease-in-out;
+}
+
+.why_illus {
+    transform: rotate(74deg);
+    left: -446px;
+    position: absolute;
+    top: -29px;
+    z-index: -1;
+    height: 309px;
+    width: 757px;
+    transition: all 2s ease-in-out;
+    animation-name: zoom-in;
+    animation-duration: 2s;
+}
+
+.baton-img {
+    position: absolute;
+    z-index: -1;
+    height: 220px;
+    width: 220px;
+    transform: rotate(75deg);
+    left: -129px;
+    top: -30px;
+    transition: all 1000ms ease-in-out;
+    animation-name: slide-top;
+    animation-duration: 1s;
+}
+
+.donut-img {
+    z-index: -1;
+    position: absolute;
+    height: 200px;
+    width: 190px;
+    left: -137px;
+    bottom: -65px;
+    transition: all 1000ms ease-in-out;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+}
+
+.animate-expand {
+    width: 6px;
+    margin-left: 4px;
+    transition: all 3000ms ease-in;
+    animation-name: expand;
+    animation-duration: 3s;
+    position: relative;
+    top: 4px;
+}
+
+.illus {
+    position: absolute;
+}
+
+.card1 {
+    top: -202px;
+    width: 220px;
+    left: -60px;
+    animation-name: slide-in-one;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.card2 {
+    top: 114px;
+    height: 220px;
+     left: -195px;
+}
+
+.slide-animate {
+    animation-name: slide-in-two;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in-one {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-two {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes expand {
+    0% {
+        width: 0;
+        margin-left: 0px;
+    }
+
+    80% {
+        width: 0%;
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 16px;
+        width: 6px;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        height: 0;
+        width: 0;
+    }
+
+    100% {
+        height: 200px;
+        width: 190px;
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        left: -500px;
+        top: -200px;
+    }
+
+    100% {
+        left: -129px;
+        top: -30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1499px) {
+
+    .why_wrapper {
+        width: 316px;
+        top: unset;
+        position: unset;
+        max-width: 310px;
+        margin-left: 12px;
+    }
+
+    .img_wrapper {
+        position: relative;
+        width: 50%;
+    }
+
+    .card1 {
+        left: -211px;
+        top: -50px;
+        width: 764px;
+        height: 410px;
+    }
+
+    .card2 {
+        width: 388px;
+        top: 84px;
+        height: 459px;
+        left: 72px;
+    }
+
+    .why_heading {
+        height: auto;
+        font-size: 33px;
+        line-height: 35px;
+        width: 343px;
+        max-width: 343px;
+    }
+
+    .why_text {
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        margin-top: 15px;
+        height: 75px;
+        width: 318px;
+    }
+
+    .why_button {
+        width: 166px;
+        font-size: 11px;
+        line-height: 27px;
+        margin-top: 24px;
+
+    }
+
+    .animate-expand {
+        width: 12px;
+        margin-left: 14px;
+        top: 1px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .why_section {
+        max-width: 1024px;
+        margin: 150px 0 315px;
+        height: auto;
+    }
+
+    .baton-img {
+        height: 550px;
+        width: 670px;
+        transform: rotate(75deg);
+        left: -302px;
+        top: -200px;
+    }
+
+    .donut-img {
+        height: 800px;
+        width: 800px;
+        bottom: -511px;
+        left: -558px;
+    }
+
+    @keyframes slide-top {
+        0% {
+            left: -500px;
+            top: -400px;
+        }
+
+        100% {
+            left: -302px;
+            top: -200px;
+        }
+    }
+
+    @keyframes zoom-in {
+        0% {
+            height: 0px;
+            width: 0px;
+        }
+
+        100% {
+            height:800px;
+            width: 800px;
+        }
+    }
+
+    @keyframes expand {
+        0% {
+            width: 0;
+            margin-left: 0px;
+        }
+    
+        80% {
+            width: 0%;
+            margin-left: 0px;
+        }
+    
+        100% {
+            margin-left: 16px;
+            width: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .why_section {
+        max-width: 1024px;
+        margin: 150px auto 315px;
+        height: auto;
+    }
+
+    .baton-img {
+        height: 550px;
+        width: 670px;
+        transform: rotate(75deg);
+        left: -412px;
+        top: -200px;
+    }
+
+    .donut-img {
+        height: 800px;
+        width: 800px;
+        bottom: -500px;
+        left: -672px;
+    }
+
+    @keyframes slide-top {
+        0% {
+            left: -500px;
+            top: -400px;
+        }
+
+        100% {
+            left: -412px;
+            top: -200px;
+        }
+    }
+
+    @keyframes zoom-in {
+        0% {
+            height: 0px;
+            width: 0px;
+        }
+
+        100% {
+            height:800px;
+            width: 800px;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .why_section {
+        max-width: 1612px;
+        margin: 182px 0 436px;
+        height: auto;
+    }
+
+    .why_wrapper {
+        max-width: 500px;
+        padding-top: 125px;
+        width: auto;
+        left: 54px;
+        top: unset;
+    }
+
+    .img_wrapper {
+        position: relative;
+        width: 50%;
+    }
+
+    .why_image {
+        margin-right: 50px;
+        width: 812px;
+        height: 988px;
+        top: -70px;
+        left: unset;
+    }
+
+    .why_heading {
+        letter-spacing: 0px;
+        height: auto;
+        font-size: 50px;
+        line-height: 60px;
+        max-width: fit-content;
+    }
+
+    .why_text {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        margin-top: 15px;
+        height: 133px;
+        width: fit-content;
+    }
+
+    .why_button {
+        width: 166px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .animate-expand {
+        width: 26px;
+        margin-left: 16px;
+        top: unset;
+    }
+
+    .baton-img {
+        left: -340px;
+        top: -195px;
+        height: 750px;
+        width: 850px;
+    }
+
+    .donut-img {
+        height: 950px;
+        width: 1000px;
+        left: -650px;
+        bottom: -525px;
+    }
+
+    .card1 {
+        width: auto;
+        top: -23px;
+    }
+
+    .card2 {
+        width: auto;
+        top: 216px;
+        right: -128px;
+        left: unset;
+        height: auto;
+    }
+
+    @keyframes slide-top {
+        0% {
+            left: -500px;
+            top: -400px;
+        }
+
+        100% {
+            left: -340px;
+            top: -195px;
+        }
+    }
+
+    @keyframes zoom-in {
+        0% {
+            height: 0px;
+            width: 0px;
+        }
+
+        100% {
+            height: 950px;
+            width: 1000px;
+        }
+    }
+
+    @keyframes expand {
+        0% {
+            width: 0;
+            margin-left: 0px;
+        }
+    
+        80% {
+            width: 0%;
+            margin-left: 0px;
+        }
+    
+        100% {
+            margin-left: 16px;
+            width: 26px;
+        }
+    }
+}

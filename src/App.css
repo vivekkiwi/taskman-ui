@@ -1,0 +1,64 @@
+:root {
+  --font_size: 16px;
+  --font_size_small: 14px;
+  --baltic_sea: #1E1C24;
+  --baltic_sea_light: #1E1C2409;
+  --white: #ffffff;
+  --black: #000000;
+  --nobel: #B1AAAA;
+  --blue_ribbon_light: #0634FF57;
+  --blue_ribbon: #0634FF;
+  --blue_ribbon_hover: #002fff;
+  --gallery: #EBEBEB;
+  --mauve: #eca0ff;
+  --melrose: #aab2ff;
+  --aquamarine: #84ffc9;
+  --gray: rgba(255, 255, 255, 0.2);
+  --rubik: rubik, sans-serif;
+  --poppins: poppins, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.margin_71_0 {
+  margin: 4.44rem 0;
+}
+
+.reveal{
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-active{
+  opacity: 1;
+  display: block;
+}
+
+.margin-top-60{
+  margin-top: 60px;
+}
+
+.margin-top-70{
+  margin-top: 70px;
+}

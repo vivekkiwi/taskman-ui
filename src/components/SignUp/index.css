@@ -1,0 +1,223 @@
+.sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up_wrapper {
+    padding: 63px 0 40px;
+    max-width: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.sign_up_heading {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    font-family: var(--rubik);
+    letter-spacing: 0px;
+    color: var(--baltic_sea);
+}
+
+.sign_up_text {
+    font-size: 6px;
+    font-weight: normal;
+    line-height: 8px;
+    font-family: var(--poppins);
+    letter-spacing: 0px;
+    color: var(--baltic_sea);
+    text-align: center;
+    max-width: 520px;
+    margin-top: 2px;
+}
+
+.actions {
+    display: flex;
+    position: relative;
+}
+
+.actions-animation {
+    transition: all 1000ms ease-in;
+    animation-name: slide-in-one;
+    animation-duration: 1000ms;
+}
+
+.email {
+    width: 90px;
+    height: 18px;
+    border: 2px solid var(--gallery);
+    border-radius: 100px;
+    padding: 4px 4px 5px;
+    text-align: left;
+    font-size: 6px;
+    font-weight: normal;
+    line-height: 91px;
+    font-family: var(--poppins);
+    letter-spacing: 0.8px;
+    color: var(--baltic_sea);
+    margin-right: 6px;
+}
+
+.try_button {
+    background: var(--blue_ribbon) 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    border-color: var(--blue_ribbon);
+    text-align: left;
+    font-size: 6px;
+    font-weight: normal;
+    line-height: 91px;
+    font-family: var(--poppins);
+    letter-spacing: 0.92px;
+    color: var(--white);
+    width: 50px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.try_button span {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.try_button span:after {
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.try_button:hover span {
+    padding-right: 0px;
+}
+
+.try_button:hover span:after {
+    opacity: 1;
+    right: -8px;
+}
+
+.sign_up_shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 645px;
+    transform: scaleX(-1);
+    transition: all 1000ms ease-in;
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    height: 140px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1499px) {
+    .sign_up_wrapper {
+        padding: 40px 0 314px;
+        max-width: 325px;
+    }
+
+    .sign_up_heading {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .sign_up_text {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 520px;
+        margin-top: 16px;
+    }
+
+    .margin-top-70 {
+        margin-top: 42px;
+    }
+
+    .signup_email {
+        width: 247px;
+        height: 45px;
+        padding: 12px 25px 12px;
+        font-size: 11px;
+        margin-right: 21.83px;
+    }
+
+    .signup_try_button {
+        width: 135px;
+        height: 43px;
+    }
+
+    .sign_up_shape{
+        height: 376px;
+    }
+
+}
+
+
+@media screen and (min-width: 1500px) {
+    .sign_up_wrapper {
+        max-width: 660px;
+        margin-right: 0;
+        padding: 120px 0 181px;
+    }
+
+    .sign_up_heading {
+        font-size: 50px;
+        line-height: 72px;
+    }
+
+    .sign_up_text {
+        font-size: 27px;
+        line-height: 37px;
+        margin-top: 10px;
+    }
+
+    .email {
+        width: 397px;
+        height: 77px;
+        padding: 25px 25px 24px;
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        opacity: 0.36;
+        margin-right: 39.83px;
+    }
+
+    .try_button {
+        font-size: 23px;
+        width: 230px;
+        height: 77px;
+    }
+
+    .try_button span {
+        width: 155px;
+        height: 77px;
+        font-size: 23px;
+    }
+
+    .sign_up_shape {
+        height: 645px;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        right: -200px;
+        transform: scaleX(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(-1);
+        right: 0;
+    }
+}
