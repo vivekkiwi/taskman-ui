@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskman-ui/static/css/main.659e384a.css",
-    "main.js": "/taskman-ui/static/js/main.fe942b27.js",
+    "main.css": "/taskman-ui/static/css/main.276cbea2.css",
+    "main.js": "/taskman-ui/static/js/main.784e2aa9.js",
     "static/js/787.fdd77506.chunk.js": "/taskman-ui/static/js/787.fdd77506.chunk.js",
     "static/media/Why_Illustration-2.svg": "/taskman-ui/static/media/Why_Illustration-2.ce3753788541046d80b93e6bb88f4a58.svg",
     "static/media/CocaCola_logo.png": "/taskman-ui/static/media/CocaCola_logo.1d5932732d6da928f26e.png",
@@ -28,12 +28,12 @@
     "static/media/hero_yellow.svg": "/taskman-ui/static/media/hero_yellow.be7ec189c368b66fddb5d9088d4351c4.svg",
     "static/media/hero_black.svg": "/taskman-ui/static/media/hero_black.a968c582bb326ecc342938370d7cca49.svg",
     "static/media/Signup_Shape.svg": "/taskman-ui/static/media/Signup_Shape.40a7b6f971e88005e63212e7af77bbc7.svg",
-    "main.659e384a.css.map": "/taskman-ui/static/css/main.659e384a.css.map",
-    "main.fe942b27.js.map": "/taskman-ui/static/js/main.fe942b27.js.map",
+    "main.276cbea2.css.map": "/taskman-ui/static/css/main.276cbea2.css.map",
+    "main.784e2aa9.js.map": "/taskman-ui/static/js/main.784e2aa9.js.map",
     "787.fdd77506.chunk.js.map": "/taskman-ui/static/js/787.fdd77506.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.659e384a.css",
-    "static/js/main.fe942b27.js"
+    "static/css/main.276cbea2.css",
+    "static/js/main.784e2aa9.js"
   ]
 }
