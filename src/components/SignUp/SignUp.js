@@ -20,7 +20,7 @@ const Footer = ({isVisited = false}) => {
         <div class="sign_up_wrapper">
             <h2 class="sign_up_heading">Get better work done</h2>
             <p class="sign_up_text">See why millions of people across 195 countries use TaskMan.</p>
-            {isActive && <div class="actions actions-animation margin-top-70">
+            {isActive && <div class="actions actions-animation margin-top-70 no-padding">
                 <input type="email signup_email" class="email" placeholder="Name@company.com" />
                 <button class="try_button signup_try_button"><span>Try for free</span></button>
             </div>}

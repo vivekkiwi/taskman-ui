@@ -6,7 +6,7 @@
 
 .sign_up_wrapper {
     padding: 63px 0 40px;
-    max-width: 134px;
+    max-width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +69,7 @@
     text-align: left;
     font-size: 6px;
     font-weight: normal;
-    line-height: 91px;
+    line-height: 6px;
     font-family: var(--poppins);
     letter-spacing: 0.92px;
     color: var(--white);
@@ -123,8 +123,8 @@
 
 @media screen and (min-width: 769px) and (max-width: 1499px) {
     .sign_up_wrapper {
-        padding: 40px 0 314px;
-        max-width: 325px;
+        padding: 40px 0 200px;
+        max-width: 350px;
     }
 
     .sign_up_heading {
@@ -156,7 +156,7 @@
         height: 43px;
     }
 
-    .sign_up_shape{
+    .sign_up_shape {
         height: 376px;
     }
 
@@ -164,10 +164,15 @@
 
 
 @media screen and (min-width: 1500px) {
+
+    .sign_up {
+        margin-top: -88px;
+    }
+
     .sign_up_wrapper {
-        max-width: 660px;
+        max-width: 666px;
         margin-right: 0;
-        padding: 120px 0 181px;
+        padding: 0px 0 181px;
     }
 
     .sign_up_heading {

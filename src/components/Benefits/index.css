@@ -31,6 +31,7 @@
     flex-direction: column;
     max-width: 146px;
     margin: 20px 12px 0;
+    min-height: 57px;
 }
 
 .benefits_img {
@@ -81,6 +82,7 @@
         max-width: 240px;
         width: 240px;
         margin: 0 20px;
+        min-height: 210px;
     }
 
     .benefits_img{
@@ -122,6 +124,8 @@
         max-width: 310px;
         width: 310px;
         margin: 0 40px;
+        /* min-height: 254px; */
+        min-height: 344px;
     }
 
     .benefits_img {

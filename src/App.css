@@ -46,7 +46,6 @@ h2 {
 }
 
 .reveal{
-  position: relative;
   opacity: 0;
   transition: 1s all ease;
 }
@@ -62,4 +61,8 @@ h2 {
 
 .margin-top-70{
   margin-top: 70px;
+}
+
+.no-padding.no-padding{
+  padding: 0;
 }

@@ -5,20 +5,22 @@
     padding: 0 12px 0;
     margin: 0 auto;
     position: relative;
-    height: 263px;
+    min-height: 340px;
 }
 
 .why_wrapper {
     max-width: 160px;
-    padding-top: 54px;
+    padding-top: 108px;
     position: relative;
-    top: 54px;
+    /* top: 54px; */
     left: 20px;
+    min-height: 340px;
 }
 
 .img_wrapper {
     position: relative;
-    width: 170px;
+    /* width: 170px; */
+    min-width: 190px;
 }
 
 .why_image {
@@ -39,7 +41,7 @@
     font-weight: bold;
     line-height: 13px;
     font-family: var(--rubik);
-    max-width: 100px;
+    max-width: 116px;
 }
 
 .why_text {
@@ -52,16 +54,18 @@
     color: var(--nobel);
     opacity: 1;
     margin-top: -3px;
-    height: 26px;
+    height: 34px;
     width: 120px;
 
 }
 
 .why_button {
-    width: 45px;
+    width: 54px;
+
+    /* width: 45px; */
     font-size: 4px;
     font-weight: bold;
-    line-height: 5px;
+    line-height: 10px;
     font-family: var(--poppins);
     letter-spacing: 0px;
     color: var(--baltic_sea);
@@ -110,7 +114,8 @@
     height: 200px;
     width: 190px;
     left: -137px;
-    bottom: -65px;
+    top: 92px;
+    /* bottom: -65px; */
     transition: all 1000ms ease-in-out;
     animation-name: zoom-in;
     animation-duration: 1s;
@@ -131,9 +136,14 @@
 }
 
 .card1 {
-    top: -202px;
+    /* top: -202px;
     width: 220px;
-    left: -60px;
+    left: -60px; */
+    top: 0px;
+    width: 220px;
+    left: -20px;
+    height: 288px;
+
     animation-name: slide-in-one;
     animation-duration: 1000ms;
     animation-fill-mode: both;
@@ -141,9 +151,12 @@
 }
 
 .card2 {
-    top: 114px;
+    /* top: 114px; */
     height: 220px;
-     left: -195px;
+     /* left: -195px; */
+     top: 118px;
+     /* overflow-y: hidden; */
+     left: -192px;
 }
 
 .slide-animate {
@@ -242,18 +255,28 @@
     .img_wrapper {
         position: relative;
         width: 50%;
+        min-height: 577px;
     }
 
     .card1 {
-        left: -211px;
+        /* left: -211px;
         top: -50px;
         width: 764px;
-        height: 410px;
+        height: 410px; */
+
+        left: -211px;
+    /* top: -50px; */
+    width: 764px;
+    height: 410px;
     }
 
     .card2 {
-        width: 388px;
+        /* width: 388px;
         top: 84px;
+        height: 459px;
+        left: 72px; */
+        width: 388px;
+        /* top: 84px; */
         height: 459px;
         left: 72px;
     }
@@ -293,23 +316,38 @@
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .why_section {
         max-width: 1024px;
-        margin: 150px 0 315px;
+        /* padding: 150px 0 270px; */
+        padding: 100px 0 110px;
+        overflow-y: hidden;
+        margin: 0;
         height: auto;
     }
 
     .baton-img {
-        height: 550px;
+        /* height: 550px;
         width: 670px;
         transform: rotate(75deg);
         left: -302px;
-        top: -200px;
+        top: -200px; */
+
+        height: 550px;
+    width: 670px;
+    transform: rotate(75deg);
+    left: -302px;
+    top: -20px;
     }
 
     .donut-img {
-        height: 800px;
+        /* height: 800px;
         width: 800px;
         bottom: -511px;
+        left: -558px; */
+
+        height: 800px;
+        width: 800px;
+        bottom: -417px;
         left: -558px;
+        top: 190px;
     }
 
     @keyframes slide-top {
@@ -356,9 +394,15 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1499px) {
     .why_section {
-        max-width: 1024px;
+        /* max-width: 1024px;
         margin: 150px auto 315px;
-        height: auto;
+        height: auto; */
+
+        max-width: 1024px;
+        margin: 0;
+        height: 900px;
+        padding: 100px 0 0px;
+        overflow-y: hidden;
     }
 
     .baton-img {
@@ -404,8 +448,11 @@
 @media screen and (min-width: 1500px) {
     .why_section {
         max-width: 1612px;
-        margin: 182px 0 436px;
+        padding: 91px 0 115px;
+        margin: 0;
         height: auto;
+        min-height: 1044px;
+        overflow-y: hidden;
     }
 
     .why_wrapper {
@@ -418,7 +465,9 @@
 
     .img_wrapper {
         position: relative;
-        width: 50%;
+        min-width: 570px;
+        min-height: 956px;
+        overflow-y: hidden;
     }
 
     .why_image {
@@ -442,8 +491,9 @@
         line-height: 30px;
         letter-spacing: 0px;
         margin-top: 15px;
-        height: 133px;
+        /* height: 133px; */
         width: fit-content;
+        min-height: 150px;
     }
 
     .why_button {
@@ -460,30 +510,45 @@
     }
 
     .baton-img {
-        left: -340px;
-        top: -195px;
+        /* left: -340px; */
+        /* top: 0; */
         height: 750px;
         width: 850px;
+
+        left: -282px;
+    top: -95px;
     }
 
     .donut-img {
         height: 950px;
         width: 1000px;
+        /* left: -650px;
+        top: 300px; */
         left: -650px;
-        bottom: -525px;
+        top: 140px;
     }
 
     .card1 {
         width: auto;
         top: -23px;
+        height: 630px;
+        width: 630px;
+
+        left: -40px;
     }
 
     .card2 {
-        width: auto;
+        /* width: auto;
         top: 216px;
-        right: -128px;
-        left: unset;
+        /* right: -128px; */
+        /* left: unset;
         height: auto;
+        right: -42px; */
+        width: 450px;
+        top: 216px;
+        left: 162px;
+        height: 515px;
+        right: -42px;
     }
 
     @keyframes slide-top {

@@ -63,7 +63,7 @@
     font-size: 16px;
     line-height: 27px;
     max-width: 160px;
-    height: 52px;
+    height: 54px;
     text-align: left;
     font-weight: bold;
     font-family: var(--rubik);
@@ -195,6 +195,7 @@
 
 .try_button {
     z-index: 10;
+    line-height: 6px;
 }
 
 .try_button span {
@@ -433,12 +434,23 @@
         padding-top: 120px;
     }
 
+    .actions{
+        padding: 0 0 113px;
+    }
+
+    .icons_wrapper{
+        padding: 0px 0 113.76px;
+    }
+
     .hero_heading {
         font-size: 40px;
         font-weight: bold;
         line-height: 48px;
-        max-width: 352px;
-        height: 80px;
+        /* max-width: 352px;
+        height: 80px; */
+
+        max-width: 370px;
+        height: 96px;
     }
 
     .hero_sub_heading {
@@ -469,7 +481,7 @@
 
     .try_button span {
         width: 120px;
-        height: 40px;
+        height: 35px;
         font-size: 13px;
     }
 
@@ -505,6 +517,11 @@
 }
 
 @media screen and (min-width: 1500px) {
+
+    .actions{
+        padding-bottom: 222px;
+    }
+
     .coca_cola_logo {
         margin: 0 152.88px 0 161.22px;
         height: 51px;
@@ -528,7 +545,7 @@
 
     .try_button span {
         width: 155px;
-        height: 77px;
+        height: 71px;
         font-size: 23px;
     }
 
