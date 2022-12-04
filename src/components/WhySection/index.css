@@ -55,7 +55,7 @@
     margin-top: -3px;
     height: 34px;
     width: 120px;
-
+    background: var(--white);
 }
 
 .why_button {
