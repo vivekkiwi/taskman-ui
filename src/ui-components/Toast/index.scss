@@ -1,0 +1,71 @@
+@import '../variable.scss';
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+.toast {
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1000;
+  left: 100px;
+  bottom: 30px;
+
+  &.success {
+    background: $apple;
+  }
+
+  &.error {
+    background: $persian_red;
+  }
+
+  &.warning {
+    background: $orange_peel;
+  }
+
+  &-wrapper {
+    display: flex;
+
+    &-msg {
+      text-align: left;
+      padding-right: 12px;
+      font-size: 14px;
+    }
+
+    & .icon {
+      height: 22px;
+      cursor: pointer;
+    }
+  }
+
+  &-action {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    cursor: pointer;
+  }
+}
+
+.toaster-enter .toast {
+  opacity: 0;
+  bottom: -30px;
+}
+
+.toaster-enter-active .toast {
+  opacity: 1;
+  bottom: 30px;
+  transition: bottom 300ms ease-in-out;
+}
+
+.toaster-exit .toast {
+  opacity: 1;
+  bottom: -30px;
+  transition: bottom 300ms ease-in-out;
+}
+
+.toaster-exit-done .toast {
+  opacity: 0;
+  bottom: -30px;
+}

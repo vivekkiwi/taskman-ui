@@ -1,0 +1,122 @@
+$label-colour: #ebecf0;
+$disabled-colour: #ddd;
+$white: #fff;
+$focus-color: #ff0;
+$azure_radiance: #0e88ff;
+$pigeon_post: #b3bcd4;
+
+.toggle-switch {
+  position: relative;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+
+  &-checkbox {
+    display: none;
+  }
+
+  &-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid $label-colour;
+    border-radius: 20px;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+
+      // > span {
+      //   box-shadow: 0 0 2px 5px $azure_radiance;
+      // }
+    }
+
+    > span:focus {
+      outline: none;
+    }
+  }
+
+  &-inner {
+    // display: block;
+    // width: 200%;
+    // margin-left: -100%;
+    // transition: margin 0.2s ease-in 0s;
+
+    &::before {
+      display: block;
+      float: left;
+      width: 100%;
+      padding: 0;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      box-sizing: border-box;
+      height: 14px;
+      line-height: 14px;
+      border: 1px solid $pigeon_post;
+      border-radius: 20px;
+      content: attr(data-yes);
+      // text-transform: uppercase;
+      // padding-left: 10px;
+      background-color: $white;
+      transition: all 0.2s ease-in 0s;
+      // color: $white;
+    }
+  }
+
+  &-disabled {
+    background-color: $disabled-colour;
+    cursor: not-allowed;
+
+    &::before {
+      background-color: $disabled-colour;
+      cursor: not-allowed;
+    }
+  }
+
+  // &-inner::after {
+  //   content: attr(data-no);
+  //   // text-transform: uppercase;
+  //   // padding-right: 10px;
+  //   background-color: $white;
+  //   // color: $white;
+  //   // text-align: right;
+  //   border: 1px solid $pigeon_post;
+  //   border-radius: 20px;
+  // }
+
+  &-switch {
+    display: block;
+    background: $pigeon_post;
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    border-radius: 20px;
+    transition: all 0.2s ease-in 0s;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    margin: 2px;
+    // box-shadow: 0 0 4px rgba(0, 106, 194, 0.2);
+  }
+
+  &-checkbox:checked + &-label {
+    .toggle-switch-inner {
+      margin-left: 0;
+
+      &::before {
+        background-color: $azure_radiance;
+        border-color: $azure_radiance;
+      }
+    }
+
+    .toggle-switch-switch {
+      right: 1px;
+      background-color: $white;
+    }
+  }
+}

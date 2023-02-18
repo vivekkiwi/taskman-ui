@@ -1,0 +1,59 @@
+@import '../../../styles/index.scss';
+
+.carouselWrapper {
+  max-width: getRem(1200);
+  padding: getRem(0 0 54);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px auto 0;
+
+  .heading {
+    font-weight: 700;
+    font-size: getRem(31);
+    line-height: getRem(42);
+    color: $mirage;
+    font-family: var(--rubik);
+  }
+
+  .cardsWrapper {
+    margin: getRem(52 0 32);
+    display: flex;
+    max-width: getRem(1200);
+    overflow: hidden;
+    position: relative;
+    height: getRem(245);
+    width: 100%;
+  }
+
+  .cardsWrapper::before,
+  .cardsWrapper::after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 241px;
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 24.48%);
+    z-index: 1;
+  }
+
+  .cardsWrapper::after {
+    right: 0;
+    background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 24.48%);
+  }
+
+  .viewAll {
+    padding: getRem(15 43);
+    border: getRem(1) solid $dodger_blue_2;
+    border-radius: getRem(100);
+    cursor: pointer;
+    letter-spacing: getRem(0.2);
+
+    .txt {
+      font-weight: 800;
+      font-size: getRem(17);
+      line-height: getRem(18);
+      color: $dodger_blue_2;
+    }
+  }
+}

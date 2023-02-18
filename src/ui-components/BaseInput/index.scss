@@ -1,0 +1,71 @@
+@import '~@src/ui-components/variable';
+
+.inputWrapper {
+  position: relative;
+  //margin-top: 20px;
+  display: inline-block;
+  font-weight: 600;
+
+  input {
+    border-radius: 2px;
+    border: 1px solid #b4c2d4;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    outline: none;
+
+    &:focus {
+      border-color: #0e88ffba;
+    }
+
+    &::placeholder {
+      color: currentColor;
+      opacity: 0.5;
+      font-weight: 400;
+    }
+
+    &:disabled {
+      background: $regent_gray;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &.leftPadding {
+      padding-left: 30px;
+    }
+
+    &.rightPadding {
+      padding-right: 30px;
+    }
+  }
+
+  .rightIcon,
+  .leftIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .leftIcon {
+    left: 16px;
+  }
+
+  .rightIcon {
+    right: 16px;
+  }
+}
+
+.errorText {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #c41f1f;
+  margin-top: 2px;
+}

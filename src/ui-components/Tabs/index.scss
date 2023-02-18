@@ -1,0 +1,55 @@
+@import '../_variable.scss';
+
+.tab-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-header {
+  margin-right: 24px;
+  padding: 0 8px;
+  font-size: 13px;
+  color: $mirage;
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  height: 32px;
+  display: flex;
+  align-items: center;
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+
+.tab-header.tab-active {
+  color: $mirage;
+  font-weight: 600;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ff585c;
+  }
+}
+
+.tab-highlight {
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background-color: #ff585c;
+    position: absolute;
+    top: 25%;
+    right: -2px;
+    transform: translate(-50%, -50%);
+  }
+}

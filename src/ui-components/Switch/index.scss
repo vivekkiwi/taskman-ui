@@ -1,0 +1,44 @@
+.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+
+  @keyframes unchecked-thumb {
+    from {
+      transform: translateX(calc(100% - 6px));
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes checked-thumb {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(100% - 6px));
+    }
+  }
+
+  .inputHidden {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  .switch-wrapper {
+    order: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &.checkbox .icon {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+}

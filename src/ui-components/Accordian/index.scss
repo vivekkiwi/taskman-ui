@@ -1,0 +1,31 @@
+@import '../variable.scss';
+
+.acdn-wrapper {
+  position: relative;
+  width: 100%;
+  background: $white;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .acdn-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 22px 0 16px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .content {
+    padding: 0 12px 0 0;
+    position: relative;
+  }
+}

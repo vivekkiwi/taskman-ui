@@ -1,0 +1,64 @@
+@function getRem($values) {
+  $remValue: '';
+
+  @each $value in $values {
+    @if (
+      $value==
+      'auto' or
+      unit($value) ==
+      '%' or
+      unit($value) ==
+      'em' or
+      unit($value) ==
+      'vh' or
+        unit($value) ==
+        'vw'
+    ) {
+      $remValue: #{$remValue $value};
+    }
+
+    @else {
+      $remValue: #{$remValue calcRem($value)};
+    }
+  }
+
+  @return $remValue;
+}
+
+@function calcRem($value, $baseFont: 16) {
+  $remSize: calc($value / $baseFont);
+
+  @if (abs($value) < 4) {
+    @return #{$value}px;
+  }
+
+  @if ($baseFont==0) {
+    @error 'base font cannot be zero';
+  }
+
+  @if ($remSize==0) {
+    @return $remSize;
+  }
+
+  @else {
+    @return #{calc(round($remSize * 100) / 100)}rem;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin smallDevice {
+  @media (max-width: 359px) {
+    @content;
+  }
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

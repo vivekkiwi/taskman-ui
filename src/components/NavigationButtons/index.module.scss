@@ -1,0 +1,58 @@
+@import '../../styles/index.scss';
+
+.navigation {
+  margin-bottom: getRem(24);
+  display: flex;
+  align-items: center;
+
+  .margin_left_90 {
+    margin-left: getRem(90);
+  }
+
+  .margin_right_90 {
+    margin-right: getRem(90);
+  }
+
+  .navBtn {
+    height: getRem(54);
+    width: getRem(54);
+    border: getRem(1) solid $catskill_white_2;
+    box-sizing: border-box;
+    box-shadow: getRem(0 4 24) $zircon;
+    border-radius: getRem(100);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .rotate_180 {
+      transform: rotate(180deg);
+    }
+  }
+
+  .disableBtn {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .dots {
+    display: flex;
+
+    .dot {
+      height: getRem(8);
+      width: getRem(8);
+      background: $catskill_white_2;
+      border-radius: getRem(100);
+      margin-right: getRem(3);
+      transition: all 0.5s ease;
+    }
+
+    .active_dot {
+      width: getRem(16);
+      height: getRem(8);
+      background: $web_orange;
+      border-radius: getRem(100);
+      transition: all 0.5s ease;
+    }
+  }
+}

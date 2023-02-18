@@ -1,0 +1,28 @@
+.TagContainer {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 8px;
+  margin-left: 6px;
+  font-weight: bold;
+  text-shadow: none;
+
+  &_primary {
+    background: #ddf1ff;
+    color: #2870c1;
+  }
+
+  &_error {
+    background: #ffe9e5;
+    color: #e03636;
+  }
+
+  &_active {
+    background: #e0fcd9;
+    color: #2e7b32;
+  }
+
+  &_secondary {
+    background: #e1e8ef;
+    color: #414b5e;
+  }
+}
