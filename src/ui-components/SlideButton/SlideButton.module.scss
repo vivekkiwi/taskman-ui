@@ -1,0 +1,40 @@
+@import '../variable.scss';
+
+.wrap {
+  display: inline-flex;
+  border-radius: 50px;
+  border: 1px solid $catskill_white_2;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 51%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid $web_orange;
+    left: -1px;
+    top: -1px;
+    transition: 500ms ease-in-out;
+  }
+
+  &.right::after {
+    left: calc(49% - 1px);
+  }
+}
+
+.button {
+  color: $secondaryLinkColor;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 9px 24px;
+  transition: color 500ms;
+
+  &.selected {
+    font-weight: 800;
+    color: $web_orange;
+    pointer-events: none;
+  }
+}

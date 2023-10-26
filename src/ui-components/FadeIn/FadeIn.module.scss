@@ -1,0 +1,12 @@
+.fadeIn {
+  opacity: 0;
+  transition-timing-function: ease-in-out;
+}
+
+.enterActive {
+  opacity: 1;
+}
+
+.enterDone {
+  opacity: 1;
+}

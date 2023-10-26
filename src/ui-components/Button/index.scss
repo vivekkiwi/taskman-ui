@@ -1,0 +1,139 @@
+@import '../variable.scss';
+
+.btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: $primaryColor;
+  background-color: $primaryBgColor;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    background: $primaryBgHover;
+  }
+
+  &.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &.ripple::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.5s;
+  }
+
+  &.ripple:active::after {
+    transform: scale(0, 0);
+    opacity: 0.3;
+    transition: 0s;
+  }
+
+  &.secondary {
+    color: $secondaryColor;
+    background: $secondaryBgColor;
+    border: 1px solid $secondaryColor;
+
+    &:hover {
+      background: $secondaryBgHover;
+    }
+
+    &.disabled {
+      border: 1px solid #babbbc;
+      background-color: $white;
+      color: #babbbc;
+    }
+  }
+
+  &.large {
+    height: 60px;
+    font-size: 20px;
+    min-width: 256px;
+  }
+
+  &.link {
+    color: $primaryTxtColor;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    min-height: auto;
+    min-width: auto;
+    font-size: inherit;
+    display: inline-flex;
+    font-weight: inherit;
+
+    &.secondary {
+      color: $secondaryLinkColor;
+      background: $secondaryBgLinkColor;
+      height: auto;
+      min-width: auto;
+      font-weight: bold;
+      text-transform: capitalize;
+      border: none;
+
+      &:hover {
+        background: $secondaryBgLinkColor;
+        color: $black;
+      }
+    }
+
+    &.large {
+      font-size: 20px;
+    }
+
+    &.medium {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 10px;
+    }
+
+    &.ripple::after {
+      background-image:
+        radial-gradient(
+          circle,
+          $secondaryLinkColor 10%,
+          transparent 10.01%
+        );
+    }
+  }
+
+  &.loading {
+    pointer-events: none;
+    color: transparent;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.12);
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.26);
+  }
+}

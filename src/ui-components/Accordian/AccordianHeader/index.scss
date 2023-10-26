@@ -1,0 +1,10 @@
+.acdn-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 12px;
+  cursor: pointer;
+
+  .title {
+    font-weight: 600;
+  }
+}
