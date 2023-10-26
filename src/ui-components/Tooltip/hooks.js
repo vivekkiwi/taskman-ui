@@ -86,6 +86,7 @@ export const useOnEvents = (
   ariaId,
   { togglePopup, onMouseEnter, onMouseLeave }
 ) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onAsArray = Array.isArray(on) ? on : [on];
 
   useEffect(() => {
@@ -108,5 +109,5 @@ export const useOnEvents = (
         default:
       }
     }
-  }, [!!triggerRef?.current, togglePopup, onMouseEnter, onMouseLeave]);
+  }, [togglePopup, onMouseEnter, onMouseLeave, triggerRef, onAsArray, ariaId]);
 };

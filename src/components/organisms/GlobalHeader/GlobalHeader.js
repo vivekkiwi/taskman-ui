@@ -3,6 +3,8 @@ import s from "./index.module.scss";
 
 const GlobalHeader = () => {
   const isSignUpOpen = false;
+  const isNotPractice =
+    !window?.location?.pathname?.includes("/practice") || false;
   return (
     <div className={s.container}>
       <div className={s.logoWrapper}>
@@ -16,6 +18,11 @@ const GlobalHeader = () => {
         </ul> */}
       </div>
       <div className={s.ctaWrapper}>
+        {isNotPractice && (
+          <Link to="/practice">
+            <button className={s.signIn}>Practice</button>
+          </Link>
+        )}
         <Link to="/about">
           <button className={s.signIn}>About Us</button>
         </Link>
