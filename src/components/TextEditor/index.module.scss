@@ -1,0 +1,20 @@
+.container {
+  :global {
+    .ql-snow .ql-color-picker,
+    .ql-snow .ql-icon-picker {
+      width: 64px !important;
+    }
+
+    .quill{
+      height: 500px !important;
+    }
+
+    .ql-container{
+      height: 90% !important;
+    }
+
+    .ql-snow .ql-picker{
+      height: 26px !important;
+    }
+  }
+}

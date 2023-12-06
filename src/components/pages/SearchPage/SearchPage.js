@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import GlobalHeader from "../../organisms/GlobalHeader";
+import TextEditor from "../../TextEditor";
 
 const SearchPage = () => {
   const [topic, setTopic] = useState("");
@@ -18,7 +19,9 @@ const SearchPage = () => {
         <p className="text-gray-600 mb-8">
           We are currently working on this site.
         </p>
-        <p className="text-gray-600 mb-8">No content to display at the moment.</p>
+        {/* <p className="text-gray-600 mb-8">No content to display at the moment.</p> */}
+        <p className="text-gray-600 mb-8">Add content to this site.</p>
+        <TextEditor />
       </div>
     </div>
   );
