@@ -88,14 +88,15 @@ const TextEditor = () => {
   };
 
   const handleSubmit = () => {
+    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+
     const options = {
       method: "POST",
       url: `https://api.thehindibuddy.com/v1/articles`,
       headers: {
         "content-type": "application/json",
-        "Accept-Encoding": "application/gzip",
       },
-      data: JSON.stringify({ id: "1231313", content: content }),
+      data: JSON.stringify({ id: randomNumber, content: content }),
     };
 
     axios
