@@ -6,11 +6,13 @@ import s from "./index.module.scss";
 
 const CHIPS = [
   "Discover",
-  "Job Notifications",
-  "Mock Test",
-  "Past Year Papers",
-  "IGNOU Material",
-  "Translation Practice Sets",
+  "Articles",
+  "Feeds",
+  // "Job Notifications",
+  // "Mock Test",
+  // "Past Year Papers",
+  // "IGNOU Material",
+  // "Translation Practice Sets",
 ];
 
 const TRENDING_CHIPS = [
