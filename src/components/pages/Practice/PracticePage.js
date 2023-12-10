@@ -1,5 +1,5 @@
 // import { useEffect, useState } from "react";
-import GlobalHeader from "../../organisms/GlobalHeader";
+// import GlobalHeader from "../../organisms/GlobalHeader";
 import KeyboardDropDown from "../../organisms/KeyboardDropDown";
 
 const PracticePage = () => {
