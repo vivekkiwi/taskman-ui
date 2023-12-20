@@ -27,9 +27,12 @@ const TRENDING_CHIPS = [
 
 const HeroMain = () => {
   const history = useNavigate();
-
-  const handleChipClick = (label) => {
-    history(`/search/${label?.label}`);
+  const handleChipClick = (e) => {
+    if (e.label === "Feeds") {
+      history(`/${e?.label}`);
+    } else {
+      history(`/search/${e?.label}`);
+    }
   };
 
   return (

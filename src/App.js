@@ -7,6 +7,7 @@ import Email from "./components/organisms/Email";
 import SearchPage from "./components/pages/SearchPage";
 import PracticePage from "./components/pages/Practice";
 import ListingPage from "./components/pages/ListingPage";
+import FeedsPage from "./components/pages/FeedsPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/type" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/feeds" element={<FeedsPage />} />
         <Route path="/" element={<TypePage />} />
         <Route path="/search/articles" element={<ListingPage />} />
         <Route path="/search/:slug" element={<SearchPage />} />
