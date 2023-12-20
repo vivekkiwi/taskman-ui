@@ -11,7 +11,7 @@ const FeedsPage = () => {
   useEffect(() => {
     const options = {
       method: "GET",
-      url: `http://127.0.0.1:3000/v1/feeds`,
+      url: `https://api.thehindibuddy.com/v1/feeds`,
       headers: {
         "content-type": "application/json",
       },
