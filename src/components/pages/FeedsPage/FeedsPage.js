@@ -24,7 +24,6 @@ const FeedsPage = () => {
       .request(options)
       .then(function (response) {
         const feedsList = response?.data?.data?.feeds || [];
-        console.log(feedsList);
         setData(feedsList);
         setLoading(false);
       })
@@ -61,7 +60,13 @@ const FeedsPage = () => {
         <p className="text-gray-600 mb-8">{content}</p>
         {!isLoading &&
           !isError &&
-          data?.map((el) => <FeedsCard cardData={el} />)}
+          data?.map((el, index) => (
+            <FeedsCard
+              cardData={el}
+              index={index}
+              key={`Feeds_card_${index + 1}`}
+            />
+          ))}
       </div>
     </div>
   );

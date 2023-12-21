@@ -8,19 +8,34 @@ import SearchPage from "./components/pages/SearchPage";
 import PracticePage from "./components/pages/Practice";
 import ListingPage from "./components/pages/ListingPage";
 import FeedsPage from "./components/pages/FeedsPage";
+import routeConfig from "./apiServices/routeConfig";
+import TestingPage from "./components/pages/TestingPage";
 
 function App() {
+  const {
+    root,
+    type,
+    about,
+    feeds,
+    articles,
+    search,
+    email,
+    practice,
+    testing,
+  } = routeConfig;
+
   return (
     <div className="App">
       <Routes>
-        <Route path="/type" element={<HomePage />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/feeds" element={<FeedsPage />} />
-        <Route path="/" element={<TypePage />} />
-        <Route path="/search/articles" element={<ListingPage />} />
-        <Route path="/search/:slug" element={<SearchPage />} />
-        <Route path="/email" element={<Email />} />
-        <Route path="/practice" element={<PracticePage />} />
+        <Route path={type} element={<HomePage />} />
+        <Route path={about} element={<AboutUs />} />
+        <Route path={feeds} element={<FeedsPage />} />
+        <Route path={root} element={<TypePage />} />
+        <Route path={articles} element={<ListingPage />} />
+        <Route path={search} element={<SearchPage />} />
+        <Route path={email} element={<Email />} />
+        <Route path={practice} element={<PracticePage />} />
+        <Route path={testing} element={<TestingPage />} />
       </Routes>
     </div>
   );
