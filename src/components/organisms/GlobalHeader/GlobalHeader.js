@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import s from "./index.module.scss";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const GlobalHeader = () => {
   const isSignUpOpen = false;
+  const { isAuthenticated, isLoading, logout, loginWithRedirect } = useAuth0();
   const isNotPractice =
     !window?.location?.pathname?.includes("/practice") || false;
+  const logText = isLoading ? "" : isAuthenticated ? "Log Out" : "Log in";
+
   return (
     <div className={s.container}>
       <div className={s.logoWrapper}>
@@ -26,6 +30,21 @@ const GlobalHeader = () => {
         <Link to="/about">
           <button className={s.signIn}>About Us</button>
         </Link>
+        {!!logText && (
+          <button
+            className={s.signIn}
+            onClick={
+              isAuthenticated
+                ? () =>
+                    logout({
+                      logoutParams: { returnTo: window.location.origin },
+                    })
+                : () => loginWithRedirect()
+            }
+          >
+            {logText}
+          </button>
+        )}
         {isSignUpOpen && (
           <>
             <button className={s.signIn}>Sign in</button>
