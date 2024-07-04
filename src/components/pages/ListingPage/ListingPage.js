@@ -45,10 +45,13 @@ const ListingPage = () => {
           !isLoading &&
           !!data?.length &&
           data.map((el) => (
-            <div
-              className="max-w-2xl mx-auto my-8 p-8 bg-[#f0f8ff6b] shadow-md rounded-md"
-              dangerouslySetInnerHTML={{ __html: el?.content }}
-            />
+            <div className="max-w-2xl mx-auto my-8 p-8 bg-[#f0f8ff6b] shadow-md rounded-md">
+              <p className="text-right w-full text-[9px]">Added at : {new Date(el.createdAt).toDateString()}</p>
+              <div
+                className=""
+                dangerouslySetInnerHTML={{ __html: el?.content }}
+              />
+            </div>
           ))}
       </div>
     </div>
